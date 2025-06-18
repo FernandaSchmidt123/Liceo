@@ -1,0 +1,95 @@
+:root {
+  --color-primario: #2e5da2;
+  --color-secundario: #ffce1f;
+  --color-acento: #dddee1;
+  --color-fondo: #ffffff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: var(--color-fondo);
+  color: #333;
+}
+header {
+  background: var(--color-primario);
+  color: var(--color-fondo);
+  padding: 1rem 2rem;
+}
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+nav {
+  margin-top: 0.5rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+nav a {
+  color: var(--color-fondo);
+  text-decoration: none;
+  font-weight: 500;
+}
+.hero {
+  background: url('ruta/a/imagen-hero.jpg') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-fondo);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+main {
+  padding: 2rem;
+}
+.seccion {
+  margin-bottom: 3rem;
+}
+.seccion:nth-child(even) {
+  background: var(--color-acento);
+  padding: 2rem;
+  border-radius: 8px;
+}
+.seccion h2 {
+  margin-bottom: 1rem;
+  color: var(--color-primario);
+}
+.boton {
+  display: inline-block;
+  background: var(--color-secundario);
+  color: var(--color-primario);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+.boton:hover {
+  background: #e6b91b;
+}
+footer {
+  background: var(--color-primario);
+  color: var(--color-fondo);
+  padding: 1.5rem 2rem;
+}
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.footer-content > div {
+  flex: 1 1 200px;
+}
+footer a {
+  color: var(--color-fondo);
+  text-decoration: none;
+}
